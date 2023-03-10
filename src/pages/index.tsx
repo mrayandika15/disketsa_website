@@ -1,9 +1,5 @@
-import { HeroSection, MainLayout } from "@/components";
+import { ComingSoon, HeroSection, MainLayout } from "@/components";
 
 export default function Home() {
-  return (
-    <MainLayout>
-      <HeroSection />
-    </MainLayout>
-  );
+  return <ComingSoon />;
 }
