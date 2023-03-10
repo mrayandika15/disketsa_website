@@ -11,29 +11,50 @@ const ComingSoon = () => {
       px="102px"
       position="relative"
     >
-      <Flex direction="column" gap="15px" alignItems="end" w="full">
-        <Text fontWeight="semibold" fontSize="xl" fontFamily="poppins">
-          Website Kami
-        </Text>
-        <Heading
-          fontSize="5xl"
-          fontFamily="Georgia"
-          fontStyle="italic"
-          letterSpacing="-1%"
-        >
-          Sedang Dikembangkan
-        </Heading>
+      <Flex w="100vw" h="100vh" position="absolute" zIndex="base" inset="0">
+        <video
+          src="/assets/video/coming-soon.mp4"
+          loop
+          autoPlay={true}
+          muted
+          style={{
+            minWidth: "100%",
+            minHeight: "100%",
+            bottom: "0",
+            right: "0",
+            position: "fixed",
+          }}
+        />
       </Flex>
 
-      <Image
-        src="/assets/ornament/ornament-berkembang.svg"
-        position="absolute"
-        top="0"
-        left="0"
-      />
+      <Flex
+        w="full"
+        justifyContent="center"
+        alignItems="center"
+        direction="column"
+        gap="25px"
+        zIndex="modal"
+        color="white"
+      >
+        <Image src="/assets/logo/solutif-yellow.svg" h="auto" w="250px" />
+        <Flex gap="8px" alignItems="center">
+          <Text fontFamily="Poppins" fontSize="lg">
+            Website Kami
+          </Text>
+          <Text
+            fontFamily="Georgia"
+            fontWeight="bold"
+            fontStyle="italic"
+            fontSize="4xl"
+          >
+            dalam pemeliharaan
+          </Text>
+        </Flex>
+      </Flex>
 
       <Flex
-        justifyContent="end"
+        color="white"
+        justifyContent="space-between"
         gap="25px"
         px="102px"
         alignItems="center"
@@ -43,6 +64,7 @@ const ComingSoon = () => {
         right="0"
         w="full"
         m="auto"
+        fontFamily="Poppins"
       >
         <Link href="mailto:halo.disketsa@gmail.com">
           halo.disketsa@gmail.com
