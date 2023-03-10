@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 
-const ComingSoon = () => {
+const MaintenanceDesktop = () => {
   return (
     <Flex
       w="100vw"
@@ -20,9 +20,7 @@ const ComingSoon = () => {
           style={{
             minWidth: "100%",
             minHeight: "100%",
-            bottom: "0",
-            right: "0",
-            position: "fixed",
+            objectFit: "cover",
           }}
         />
       </Flex>
@@ -81,4 +79,4 @@ const ComingSoon = () => {
   );
 };
 
-export default ComingSoon;
+export default MaintenanceDesktop;
